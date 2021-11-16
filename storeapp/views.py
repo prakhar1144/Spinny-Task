@@ -74,6 +74,7 @@ class DeleteBox(generics.DestroyAPIView):
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
         if instance.creator != self.request.user:
-            return Response(status=status.HTTP_403_FORBIDDEN) 
+            return Response(status=status.HTTP_403_FORBIDDEN)
+        instance.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
