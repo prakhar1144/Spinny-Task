@@ -42,6 +42,9 @@ class UpdateBoxAPIView(generics.UpdateAPIView):
     queryset = Box.objects.all()
     serializer_class = BoxSerializer
 
+    def patch(self, request, *args, **kwargs):
+        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+
 class AllBoxes(generics.ListAPIView):
     permission_classes = [AllowAny]
     queryset = Box.objects.all()
