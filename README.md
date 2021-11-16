@@ -2,7 +2,7 @@
 
   #### Credentials for Testing
 
-  permission | username | password
+  user type  | username | password
   -----------|----------|----------
   Admin      |  admin   | admin@14
   Staff      |  user2   | spinny@14
@@ -40,25 +40,25 @@
 
   Test url : https://spinny.herokuapp.com/list/
   ```
-  * Filters example url : 
-    * /list/?length__lt=5
-    * /list/?length__gt=5
+  * Filters : 
+    * /list/?length__lt=2
+    * /list/?length__gt=2
 
-    * /list/?breadth__lt=5
-    * /list/?breadth__gt=5
+    * /list/?breadth__lt=2
+    * /list/?breadth__gt=2
 
-    * /list/?height__lt=5
-    * /list/?height__gt=5
+    * /list/?height__lt=2
+    * /list/?height__gt=2
 
-    * /list/?area__lt=5
-    * /list/?area__gt=5
+    * /list/?area__lt=2
+    * /list/?area__gt=2
 
-    * /list/?volume__lt=5
-    * /list/?volume__gt=5
+    * /list/?volume__lt=2
+    * /list/?volume__gt=2
 
-    * /list/?creator=1
+    * /list/?creator=2
 
-    * /list/?created_at__lt=2021-11-16
+    * /list/?created_at__lt=2021-11-17
     * /list/?created_at__gt=2021-11-16
 
 * Task 4
@@ -70,7 +70,7 @@
 
   Test url : https://spinny.herokuapp.com/my-boxes/
   ```
-  * Filters example url :
+  * Filters :
     > Filters canbe used in a similar way as Task 3
     
     > Example : /my-boxes/?length__lt=5
@@ -84,3 +84,5 @@
 
   Test url : https://spinny.herokuapp.com/delete/1
   ```
+##### As Mentioned in assignment
+> Values A1, V1, L1 and L2 shall be configured [externally](https://github.com/prakhar1144/Spinny-Task/blob/fa7ca4db01fd66c70c840571ddec8fde29f2a316/spinny/settings.py#L136)
