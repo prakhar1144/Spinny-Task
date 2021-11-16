@@ -10,7 +10,7 @@
 
 * Task 0
 
-  > [Data Modeling]()
+  > [Data Modeling](https://github.com/prakhar1144/Spinny-Task/blob/master/storeapp/models.py)
 
 
 * Task 1 
@@ -19,13 +19,17 @@
   Add API
 
   POST /create/
+
+  Test url : https://spinny.herokuapp.com/create/
   ```
 * Task 2
 
   ```
   Update API
   
+  PUT /update/id
   
+  Test url : https://spinny.herokuapp.com/update/1
   ```
 * Task 3
 
@@ -33,6 +37,8 @@
   List All - API
   
   GET /list/
+
+  Test url : https://spinny.herokuapp.com/list/
   ```
   * Filters example url : 
     * /list/?length__lt=5
@@ -61,6 +67,8 @@
   List My Boxes - API
   
   GET /my-boxes/
+
+  Test url : https://spinny.herokuapp.com/my-boxes/
   ```
   * Filters example url :
     > Filters canbe used in a similar way as Task 3
@@ -72,5 +80,7 @@
   ```
   Delete - API
   
-  DELETE /delete/1
+  DELETE /delete/id
+
+  Test url : https://spinny.herokuapp.com/delete/1
   ```
